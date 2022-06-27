@@ -1,0 +1,123 @@
+/* ----- Google Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* ----- CSS Reset ----- */
+@import 'css-reset';
+
+/* ----- Variables ----- */
+:root {
+  --sedan-card-border-radius: 1rem 1rem 0 0;
+  --suv-card-border-radius: 0 0 0 0;
+  --luxury-card-border-radius: 0 0 1rem 1rem;
+  --cards-direction: column;
+  --cards-padding: 1.6rem;
+  --cards-wrap: nowrap;
+  --cards-justify-content: center;
+  --cars-margin: 8.8rem 0 8.8rem 0;
+  --card-width: 32.7rem;
+  --card-height: 44.2rem;
+}
+
+/* ----- Colors ----- */
+// Primary
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+// Neutral
+$transparent-white: hsla(0, 0%, 100%, 0.75); // paragraphs
+$very-light-gray: hsl(0, 0%, 95%); // background, headings, buttons
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $very-light-gray;
+  font-size: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+/* ----- Cards ----- */
+.cards {
+  display: flex;
+  flex-direction: var(--cards-direction);
+  flex-wrap: var(--cards-wrap);
+  align-items: center;
+  margin: var(--cars-margin);
+  padding: var(--cards-padding);
+  justify-content: var(--cards-justify-content);
+}
+
+.card {
+  position: relative;
+  max-width: var(--card-width);
+  height: var(--card-height);
+  padding: 4.8rem 4.8rem;
+}
+
+.card-icon {
+  margin-bottom: 3.5rem;
+}
+
+.card-heading {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: $very-light-gray;
+  margin-bottom: 2.8rem;
+}
+
+.card-text {
+  line-height: 1.5;
+  color: $transparent-white;
+}
+
+/* ----- Card Buttons ----- */
+.card-btn {
+  width: 14.8rem;
+  height: 4.8rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: $very-light-gray;
+  position: absolute;
+  bottom: 4.8rem;
+  cursor: pointer;
+  &:hover {
+    border: 0.1rem solid $very-light-gray;
+    background-color: transparent;
+  }
+}
+
+.sedan-card {
+  background-color: $bright-orange;
+  border-radius: var(--sedan-card-border-radius);
+  .card-btn {
+    color: $bright-orange;
+    &:hover {
+      color: $very-light-gray;
+    }
+  }
+}
+
+.suv-card {
+  background-color: $dark-cyan;
+  border-radius: var(--suv-card-border-radius);
+  .card-btn {
+    color: $dark-cyan;
+    &:hover {
+      color: $very-light-gray;
+    }
+  }
+}
+
+.luxury-card {
+  background-color: $very-dark-cyan;
+  border-radius: var(--luxury-card-border-radius);
+  .card-btn {
+    color: $very-dark-cyan;
+    &:hover {
+      color: $very-light-gray;
+    }
+  }
+}
