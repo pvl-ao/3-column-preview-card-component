@@ -1,0 +1,24 @@
+// 768px
+@media (min-width: 48rem) {
+  :root {
+    --cards-direction: row;
+    --cards-wrap: wrap;
+    --cards-padding: 2.4rem;
+    --sedan-card-border-radius: 1rem 0 0 1rem;
+    --suv-card-border-radius: 0 1rem 1rem 0;
+    --luxury-card-border-radius: 0 0 1rem 1rem;
+  }
+
+  html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+}

@@ -1,0 +1,12 @@
+// 992px
+@media (min-width: 62rem) {
+  :root {
+    --cards-padding: 0;
+    --card-width: 30.7rem;
+    --card-height: 50.4rem;
+    --cars-margin: 0 0 0 0;
+    --sedan-card-border-radius: 1rem 0 0 1rem;
+    --suv-card-border-radius: 0 0 0 0;
+    --luxury-card-border-radius: 0 1rem 1rem 0;
+  }
+}
