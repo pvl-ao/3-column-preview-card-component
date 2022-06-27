@@ -35,4 +35,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@pvl-ao](https://pvl-ao-3-column-preview-card-component.netlify.app/)
+- Frontend Mentor - [@pvl-ao](https://www.frontendmentor.io/profile/pvl-ao)
